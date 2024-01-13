@@ -2089,6 +2089,19 @@ a {
   border-color: #79f9c6;
 }
 
+.desktop .component-3:hover{
+  width: 215px;
+  height: 250px;
+  top: 3347px;
+  left: 611px;
+  position: absolute;
+  border-radius: 11px;
+  border: 2px solid;
+  border-color: #46babd;
+  background-color: white;
+}
+
+
 .desktop .slack-logo {
   position: absolute;
   width: 114px;
@@ -2111,6 +2124,31 @@ a {
   line-height: 23px;
 }
 
+
+.component-3 a .they-build-modern-3 {
+  color: white;
+}
+
+.component-3 a .group-27 .text-wrapper-58 {
+  color: white;
+}
+
+.component-3:hover a .group-27 .text-wrapper-58 {
+  color: #1d1b4d;
+}
+
+.component-3:hover a .they-build-modern-3 {
+  color: #1d1b4d;
+}
+
+.desktop .component-3:hover .slack-logo {
+  content: url(/img/2/slack.svg);
+}
+
+.desktop .component-3 a .text-wrapper-58 {
+  color: #ffffff;
+}
+
 .desktop .group-27 {
   position: absolute;
   width: 70px;
@@ -2130,6 +2168,11 @@ a {
   border-radius: 11px;
   border: 2px solid;
   border-color: #79f9c6;
+}
+
+.desktop .component-4:hover {
+  background-color: white;
+  border-color: #46babd;
 }
 
 .desktop .overlap-23 {
@@ -2154,6 +2197,24 @@ a {
   line-height: 23px;
   white-space: nowrap;
 }
+
+.desktop .component-4:hover .spotify-white-2 {
+  content: url(/img/2/spotify.svg);
+  color: white;
+}
+
+.desktop .component-4:hover .overlap-23 {
+  color: #1d1b4d;
+}
+
+.desktop .component-4:hover .overlap-23 .text-wrapper-60 {
+  color: #1d1b4d;
+}
+
+.desktop .component-4:hover .overlap-23 .text-wrapper-61 {
+  color: #1d1b4d;
+}
+
 
 .desktop .group-28 {
   position: absolute;
@@ -2316,6 +2377,9 @@ a {
   line-height: 24px;
   white-space: nowrap;
 }
+
+
+
 
 .desktop .group-30 {
   position: absolute;
