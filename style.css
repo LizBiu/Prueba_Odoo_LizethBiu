@@ -1042,13 +1042,51 @@ a {
   height: 58px;
 }
 
-.desktop .despliegue {
-  position: absolute;
-  width: 450px;
-  height: 58px;
-  top: 0;
-  left: 0;
+.dropdown-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #162c5d;
+  font-size: 13px;
+  letter-spacing: -0.08px;
+  line-height: 23px;
+  background-color: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-top: none;
+  border-radius: 11px;
+  z-index: 1;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
+
+.dropdown-content.show {
+  display: block;
+}
+.desktop .despliegue,
+.desktop .despliegue-2,
+.desktop .despliegue-3,
+.desktop .despliegue-4,
+.desktop .despliegue-5 {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  background-color: #ffffff;
+  border-radius: 11px;
+  border: 1px solid #e1e8f0;
+  cursor: pointer;
+}
+
+.despliegue.show,
+.despliegue-2.show,
+.despliegue-3.show,
+.despliegue-4.show,
+.despliegue-5.show {
+  border-radius: 11px 11px 0 0;
+}
+
 
 .desktop .group-6 {
   position: relative;

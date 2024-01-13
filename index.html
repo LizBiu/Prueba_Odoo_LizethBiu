@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="styleguide.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css" />
+  <script src="dropdown.js"></script>
 </head>
 
 <body>
@@ -213,48 +213,131 @@
 
       <div class="element-faq">
         <div class="overlap-9">
-          <div class="despliegue">
+          <div class="despliegue" onclick="toggleDropdown(this)">
             <div class="group-6">
               <div class="text-wrapper-41">+</div>
-              <div class="text-wrapper-42"></div>
+              <div class="text-wrapper-42">
+                <p class="toggle-text">How do I get access to my database?</p>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <br>
+              <p>
+                First log into the Odoo account from this
+                <a href="https://www.odoo.com/web/login" target="_blank">link</a>:
+              </p>
+              <p>
+                After successfully logging into the account, you can see your name in the Top
+                Right of the screen. Click on it, there you can see a menu in the dropdown named My Databases.
+                Click on it, and there you can see the databases.
+              </p>
+              <br>
             </div>
           </div>
-          <p class="text-wrapper-43">How do I get access to my database?</p>
         </div>
       </div>
+
+
       <div class="element-2">
         <div class="overlap-9">
-          <div class="despliegue">
+          <div class="despliegue" onclick="toggleDropdown(this)">
             <div class="group-6">
               <div class="text-wrapper-41">+</div>
-              <div class="text-wrapper-42"></div>
+              <div class="text-wrapper-42">
+                <p class="toggle-text">How do I get access to my database?</p>
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <br>
+              <p>
+                First log into the Odoo account from this
+                <a href="https://www.odoo.com/web/login" target="_blank">link</a>:
+              </p>
+              <p>
+                After successfully logging into the account, you can see your name in the Top
+                Right of the screen. Click on it, there you can see a menu in the dropdown named My Databases.
+                Click on it, and there you can see the databases.
+              </p>
+              <br>
             </div>
           </div>
-          <p class="text-wrapper-43">How do I get access to my database?</p>
         </div>
       </div>
-      <div class="despliegue-2">
+
+      <div class="despliegue-2 despliegue" onclick="toggleDropdown(this)">
         <div class="group-6">
           <div class="text-wrapper-41">+</div>
-          <p class="text-wrapper-42">Which license do I need?</p>
+          <div class="text-wrapper-42">
+            <p class="toggle-text">Which license do I need?</p>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <br>
+          <p>
+            The only licenses that are required are the Odoo licenses (for the Enterprise Edition - the Community
+            Edition requires no license).
+            You may or may not want a paid support option for the server operating system and for PostgreSQL (although
+            typically people do not worry about any of this).
+          </p>
+          <br>
         </div>
       </div>
-      <div class="despliegue-3">
+
+      <div class="despliegue-3 despliegue" onclick="toggleDropdown(this)">
         <div class="group-6">
           <div class="text-wrapper-41">+</div>
-          <p class="text-wrapper-42">Which license do I need?</p>
+          <div class="text-wrapper-42">
+            <p class="toggle-text">Which license do I need?</p>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <br>
+          <p>
+            The only licenses that are required are the Odoo licenses (for the Enterprise Edition - the Community
+            Edition requires no license).
+            You may or may not want a paid support option for the server operating system and for PostgreSQL (although
+            typically people do not worry about any of this).
+          </p>
+          <br>
         </div>
       </div>
-      <div class="despliegue-4">
+
+      <div class="despliegue-4 despliegue" onclick="toggleDropdown(this)">
         <div class="group-6">
           <div class="text-wrapper-41">+</div>
-          <p class="text-wrapper-42">Which license do I need?</p>
+          <div class="text-wrapper-42">
+            <p class="toggle-text">Which license do I need?</p>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <br>
+          <p>
+            The only licenses that are required are the Odoo licenses (for the Enterprise Edition - the Community
+            Edition requires no license).
+            You may or may not want a paid support option for the server operating system and for PostgreSQL (although
+            typically people do not worry about any of this).
+          </p>
+          <br>
         </div>
       </div>
-      <div class="despliegue-5">
+
+    
+      <div class="despliegue-5 despliegue" onclick="toggleDropdown(this)">
         <div class="group-6">
           <div class="text-wrapper-41">+</div>
-          <p class="text-wrapper-42">Which license do I need?</p>
+          <div class="text-wrapper-42">
+            <p class="toggle-text">Which license do I need?</p>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <br>
+          <p>
+            The only licenses that are required are the Odoo licenses (for the Enterprise Edition - the Community
+            Edition requires no license).
+            You may or may not want a paid support option for the server operating system and for PostgreSQL (although
+            typically people do not worry about any of this).
+          </p>
+          <br>
         </div>
       </div>
 
@@ -299,7 +382,6 @@
           <img class="group-26" src="img/group-42-1.png" />
         </a>
       </div>
-
 
       <div class="component-3">
         <a href="https://slack.com/intl/es-mx">
