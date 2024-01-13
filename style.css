@@ -1836,6 +1836,43 @@ a {
   border-color: #79f9c6;
 }
 
+.desktop .component:hover {
+  width: 213px;
+  height: 251px;
+  top: 0;
+  left: 114px;
+  position: absolute;
+  border-radius: 11px;
+  border: 2px solid;
+  border-color: #79f9c6;
+  background-color: white;
+}
+
+
+.component a .they-build-modern {
+  color: white;
+}
+
+.component a .group-24 .text-wrapper-58 {
+  color: white;
+}
+
+.component:hover a .group-24 .text-wrapper-58 {
+  color: #1d1b4d;
+}
+
+.component:hover a .they-build-modern {
+  color: #1d1b4d;
+}
+
+.desktop .component:hover .image-3 {
+  content: url(/img/2/amazon.svg);
+}
+
+.desktop .component a .text-wrapper-58 {
+  color: #ffffff;
+}
+
 .desktop .they-build-modern {
   position: absolute;
   width: 150px;
@@ -1896,6 +1933,8 @@ a {
   top: 3178px;
   left: 1105px;
 }
+
+
 
 .desktop .creative-idea-2 {
   position: absolute;
