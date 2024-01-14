@@ -22,6 +22,17 @@ function toggleDropdown(element) {
     }
   };
 
+
+  function toggleDropdownm(element) {
+    var dropdownContent = element.querySelector('.dropdown-contentm');
+    
+    // Verifica si dropdownContent existe antes de realizar operaciones
+    if (dropdownContent) {
+      dropdownContent.classList.toggle('show');
+    }
+  }  
+
+
   function toggleNav() {
     var menu = document.querySelector('.hamburger-menu');
     menu.classList.toggle('show-menu');
