@@ -21,5 +21,9 @@ function toggleDropdown(element) {
       });
     }
   };
-  
+
+  function toggleNav() {
+    var menu = document.querySelector('.hamburger-menu');
+    menu.classList.toggle('show-menu');
+  }
   
