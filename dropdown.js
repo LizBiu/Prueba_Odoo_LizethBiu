@@ -23,14 +23,52 @@ function toggleDropdown(element) {
   };
 
 
+  document.addEventListener('click', function(event) {
+    var dropdowns = document.querySelectorAll('.faqs');
+    dropdowns.forEach(function(dropdown) {
+      if (!dropdown.contains(event.target)) {
+        dropdown.querySelector('.dropdown-contentm').classList.remove('show');
+      }
+    });
+  });
+  
+  document.addEventListener('click', function(event) {
+    // Cierra el desplegable si se hace clic fuera de él
+    var dropdowns = document.querySelectorAll('.faqs');
+    dropdowns.forEach(function(dropdown) {
+      if (!dropdown.contains(event.target)) {
+        dropdown.querySelector('.dropdown-contentm').classList.remove('show');
+      }
+    });
+  
+    // Restaura los márgenes si no hay desplegables abiertos
+    if (!Array.from(dropdowns).some(dropdown => dropdown.querySelector('.dropdown-contentm').classList.contains('show'))) {
+      dropdowns.forEach(dropdown => {
+        dropdown.style.marginTop = 0;
+      });
+    }
+  });
+  
   function toggleDropdownm(element) {
     var dropdownContent = element.querySelector('.dropdown-contentm');
-    
-    // Verifica si dropdownContent existe antes de realizar operaciones
     if (dropdownContent) {
       dropdownContent.classList.toggle('show');
+  
+      // Ajusta las posiciones de los elementos
+      var openDropdowns = Array.from(document.querySelectorAll('.faqs.show'));
+      openDropdowns.forEach((dropdown, index) => {
+        dropdown.style.marginTop = index * dropdownContent.clientHeight + 'px';
+      });
     }
-  }  
+  }
+  
+
+document.addEventListener('click', function (event) {
+
+  if (!event.target.closest('.faqs')) {
+    closeAllDropdowns();
+  }
+});
 
 
   function toggleNav() {

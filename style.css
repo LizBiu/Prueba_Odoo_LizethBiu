@@ -106,67 +106,73 @@
   cursor: pointer;
 }
 
-.faqs.show{
-  border-radius: 11px 11px 0 0;
+.mobile-content .container {
+  display: flex;
+  flex-direction: column;
 }
 
 
-.dropdown-contentm {
+.faqs.show {
+  border-radius: 11px 11px 0 0;
+}
+
+.mobile-content .dropdown-contentm {
   display: none;
+  position: absolute;
   width: 100%;
   font-family: "Inter", Helvetica;
   font-weight: 500;
   color: #162c5d;
-  font-size: 13px;
+  font-size: 0.8em;
   letter-spacing: -0.08px;
-  line-height: 23px;
+  line-height: 1.6;
   background-color: #ffffff;
   border: 1px solid #e1e8f0;
   border-top: none;
   border-radius: 11px;
   z-index: 1;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.dropdown-contentm.show {
-  display: block;
-}
-
-
-.mobile-content .group-6m {
-  position: relative;
-  height: 58px;
-  background-color: #ffffff;
-  border-radius: 11px;
-  border: 1px solid;
-  border-color: #e1e8f0;
-}
-
-.mobile-content .text-wrapper-41m {
-  position: absolute;
-  width: 12px;
-  font-family: "Inter", Helvetica;
-  font-weight: 500;
-  color: #748098;
-  font-size: 15px;
+  padding: 10px;
   text-align: center;
-  letter-spacing: -0.09px;
-  line-height: 23px;
-  white-space: nowrap;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.mobile-content .dropdown-contentm.show {
+  display: block;
+  position: relative;
+  z-index: 2; /* Ajusta según sea necesario para que esté por encima de los demás elementos */
+}
+
+.mobile-content .dropdown-contentm p {
+  margin-top: 20px;
+  white-space: normal; 
+}
+
+.mobile-content .text-wrapper-42m {
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.mobile-content .text-wrapper-42m {
+  position: relative;
+  text-align: center;
 }
 
 .mobile-content .text-wrapper-42m {
   position: absolute;
-  width: 176px;
+  width: calc(100% - 40px); 
+  top: 50%;
+  transform: translateY(-50%);
   font-family: "Inter", Helvetica;
   font-weight: 500;
   color: #162c5d;
   font-size: 13px;
   letter-spacing: -0.08px;
-  line-height: 23px;
   white-space: nowrap;
 }
+
+
 
 /*Contenido desktop*/
   .content {
