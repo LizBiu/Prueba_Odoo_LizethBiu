@@ -1,4 +1,3 @@
-/* Estilos por defecto para ambos casos */
 .desktop-content {
   display: block;
 }
@@ -7,29 +6,94 @@
   display: none;
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  letter-spacing: -0.08px;
+  line-height: 24px;
+  white-space: nowrap;
 }
 
+.mobile-content .div-m {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgb(3, 138, 255) 15.94%,
+    rgb(28, 111, 232) 43.18%,
+    rgb(49, 7, 133) 91.97%,
+    rgb(18, 24, 36) 100%
+  );
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 
-
-/* Media query para pantallas de 992px o más */
 @media (min-width: 992px) {
   .desktop-content {
-    display: block; /* Mostrar el contenido para escritorio */
+    display: block;
   }
 
   .mobile-content {
-    display: none !important; /* Añade !important para asegurarte de que se sobrescriban las reglas anteriores */
+    display: none !important; 
   }
 }
 
-/* Media query para pantallas de menos de 992px */
 @media (max-width: 991px) {
   .desktop-content {
-    display: none !important; /* Añade !important para asegurarte de que se sobrescriban las reglas anteriores */
+    display: none !important; 
   }
 
   .mobile-content {
-    display: block; /* Mostrar el contenido para móviles */
+    display: block; 
+  }
+
+  .centrar-contenido {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-container {
+    max-width: 100%;
+    margin: 70px auto 0;
+    height: auto;
+  }
+
+  .content {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .mobile-content .content-container a .spotify-img,
+  .mobile-content .content-container a .amazon-img,
+.mobile-content .content-container a .slack-img,
+.mobile-content .content-container a .paypal-img,
+.mobile-content .content-container a .airbnb-img {
+  margin-top: 5%;
+  max-width: 60%;
+}
+
+.mobile-content .text-wrapper-37-m,
+.mobile-content .text-wrapper-36-m {
+  font-family: "Inter", Helvetica;
+  color: #ffffff;
+  margin: 0; 
+  text-align: center;
+}
+
+.mobile-content .text-wrapper-37-m {
+  font-size: 1.2em;
+  line-height: 1.3;
+  white-space: normal;
+
+}
+
+
+/*Contenido desktop*/
+  .content {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -1123,6 +1187,7 @@ a {
   border-radius: 9px;
   border: 1px solid;
   border-color: #79f9c6;
+  z-index: 1;
 }
 
 .desktop-content .element-faq {
